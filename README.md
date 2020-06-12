@@ -77,8 +77,38 @@ _Have a bug or an issue with this application? Email post_khan@yahoo.com_
 * Entity
 * JWT (Jason Web Token)
 
+## Brief Documentation for JWT
+* Built with ASP.NET Core 2.2
 
+* Following files were written into to implement JWT
 
+    Controllers
+
+        UsersController.cs
+
+    Models
+
+        User.cs
+
+    Helpers
+
+        AppSettings.cs
+
+    Services
+
+        UserService.cs
+
+    appsettings.Development.json
+
+    appsettings.json
+
+    Program.cs
+
+    Startup.cs
+    
+    StateNationalPks.csproj
+
+* Tutorial is available at https://jasonwatmore.com/post/2018/08/14/aspnet-core-21-jwt-authentication-tutorial-with-example-api
 
 ### License
 
