@@ -3,23 +3,23 @@ using Microsoft.EntityFrameworkCore.Design;
 using Microsoft.Extensions.Configuration;
 using System.IO;
 
-namespace TravelApi.Models
+namespace StateNationalPks.Models
 {
-  public class TravelApiContextFactory : IDesignTimeDbContextFactory<TravelApiContext>
+  public class StateNationalPksContextFactory : IDesignTimeDbContextFactory<StateNationalPksContext>
   {
-    TravelApiContext IDesignTimeDbContextFactory<TravelApiContext>.CreateDbContext(string[] args)
+    StateNationalPksContext IDesignTimeDbContextFactory<StateNationalPksContext>.CreateDbContext(string[] args)
     {
       IConfigurationRoot configuration = new ConfigurationBuilder()
           .SetBasePath(Directory.GetCurrentDirectory())
           .AddJsonFile("appsettings.json")
           .Build();
 
-      var builder = new DbContextOptionsBuilder<TravelApiContext>();
+      var builder = new DbContextOptionsBuilder<StateNationalPksContext>();
       var connectionString = configuration.GetConnectionString("DefaultConnection");
 
       builder.UseMySql(connectionString);
 
-      return new TravelApiContext(builder.Options);
+      return new StateNationalPksContext(builder.Options);
     }
   }
 }

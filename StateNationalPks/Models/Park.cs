@@ -1,16 +1,16 @@
 // using System.ComponentModel; // required for [DefaultValue(whatever)]
 using System.ComponentModel.DataAnnotations;
 
-namespace TravelApi.Models
+namespace StateNationalPks.Models
 {
   public class Place
   {
-    public int PlaceId { get; set; }
+    public int ParkId { get; set; }
     [Required]
     [StringLength(50)]
-    public string City { get; set; }
+    public string Type { get; set; }
     [Required]
-    public string Country { get; set; }
+    public string Name { get; set; }
     [Required]
     [StringLength(500, ErrorMessage = "Description must be less than 500 characters")]
     public string Description { get; set; }

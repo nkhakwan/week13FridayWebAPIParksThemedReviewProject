@@ -11,11 +11,11 @@ using System;
 using System.IO;
 using System.Reflection;
 using System.Text;
-using TravelApi.Helpers;
-using TravelApi.Models;
-using TravelApi.Services;
+using StateNationalPks.Helpers;
+using StateNationalPks.Models;
+using StateNationalPks.Services;
 
-namespace Park
+namespace StateNationalPks
 {
   public class Startup
     {
@@ -30,7 +30,7 @@ namespace Park
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddCors();
-            services.AddDbContext<ParkContext>(opt =>
+            services.AddDbContext<StateNationalPksContext>(opt =>
                 opt.UseMySql(Configuration.GetConnectionString("DefaultConnection")));
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 

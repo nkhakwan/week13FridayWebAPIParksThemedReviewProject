@@ -1,4 +1,4 @@
-namespace TravelApi.Models
+namespace StateNationalPks.Models
 {
     public class User
     {
