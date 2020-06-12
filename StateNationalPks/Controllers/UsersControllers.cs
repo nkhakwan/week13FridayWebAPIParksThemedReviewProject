@@ -28,13 +28,11 @@ namespace StateNationalPks.Controllers
         [HttpPost("authenticate")]
         public IActionResult Authenticate([FromBody]User userParam)
         {
-            Console.WriteLine($"||||||||||||||||||||||||||||||||||||||||||||We are inside Users Controller anonymous allowed {userParam.Username} and {userParam.Password}");
             var user = _userService.Authenticate(userParam.Username, userParam.Password);
-            
-            Console.WriteLine($"|||||||||||||||||||||||||||||||||||||||||||| value for the user variable is = {user}");
             if (user == null)
+            {
                 return BadRequest(new { message = "Definitely not the correct username or password" });
-
+            }
             return Ok(user);
         }
 

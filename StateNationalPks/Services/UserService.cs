@@ -25,8 +25,8 @@ namespace StateNationalPks.Services
         // users hardcoded for simplicity, store in a db with hashed passwords in production applications
         // private List<User> _users = new List<User>
         // { 
-        //     new User { Id = 1, Username = "test", Password = "test" } ,
-        //     new User { Id = 2, Username = "secondTest", Password = "secondTest" } 
+        //     new User { Id = 1, Username = "Leilani", Password = "test" } ,
+        //     new User { Id = 2, Username = "Travis", Password = "test" } 
             
         // };
         // --------------------------------------------------------------------------------------------------------------------------
@@ -42,13 +42,11 @@ namespace StateNationalPks.Services
 
         public User Authenticate(string username, string password)
         {
-            Console.WriteLine($"|||||||||||||||||||||||||||||||||||||||||here is username {username} and here is password {password}");
             var user = _users.Users.SingleOrDefault(x => x.Username == username && x.Password == password);
 
             // return null if user not found
             if (user == null)
               {
-            Console.WriteLine($"||||||||||||||||||||||||||||||||||||||||| We are null");
 
                 return null;
               }
