@@ -33,7 +33,7 @@ namespace StateNationalPks.Controllers
       {
         Console.WriteLine("|||||||||||||||||||||||||||||||||||Finally we know get is asking for null");
        var Us =  _db.Parks.FirstOrDefault(entry => entry.ParkId == 1);
-        Console.WriteLine($"|||||||||||||||||||||||||||||||||||{Us.City}");
+        Console.WriteLine($"|||||||||||||||||||||||||||||||||||{Us.Name}");
 
         return _db.Parks.ToList();
       }
@@ -46,13 +46,13 @@ namespace StateNationalPks.Controllers
       
       if (type != null)
       {
-        query = query.Where(entry => entry.City == type);
+        query = query.Where(entry => entry.Type == type);
          Console.WriteLine("we are in type");
       }
 
       if (name != null)
       {
-        query = query.Where(entry => entry.Country == name);
+        query = query.Where(entry => entry.Name == name);
         // Console.WriteLine("we are in name");
       }
 

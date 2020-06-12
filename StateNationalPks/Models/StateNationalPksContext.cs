@@ -4,7 +4,7 @@ namespace StateNationalPks.Models
 {
   public class StateNationalPksContext : DbContext
   {
-    public NameNationalPksContext(DbContextOptions<StateNationalPksContext> options)
+    public StateNationalPksContext(DbContextOptions<StateNationalPksContext> options)
         : base(options)
     {
     }

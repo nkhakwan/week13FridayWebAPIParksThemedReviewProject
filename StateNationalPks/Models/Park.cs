@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace StateNationalPks.Models
 {
-  public class Place
+  public class Park
   {
     public int ParkId { get; set; }
     [Required]
