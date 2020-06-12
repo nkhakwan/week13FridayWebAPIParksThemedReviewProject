@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\epost\\cSharp\\Parks\\Parks.csproj": {}
+    "C:\\Users\\epost\\cSharp\\Parks\\Parks\\Parks.csproj": {}
   },
   "projects": {
-    "C:\\Users\\epost\\cSharp\\Parks\\Parks.csproj": {
+    "C:\\Users\\epost\\cSharp\\Parks\\Parks\\Parks.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\epost\\cSharp\\Parks\\Parks.csproj",
+        "projectUniqueName": "C:\\Users\\epost\\cSharp\\Parks\\Parks\\Parks.csproj",
         "projectName": "Parks",
-        "projectPath": "C:\\Users\\epost\\cSharp\\Parks\\Parks.csproj",
+        "projectPath": "C:\\Users\\epost\\cSharp\\Parks\\Parks\\Parks.csproj",
         "packagesPath": "C:\\Users\\epost\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\epost\\cSharp\\Parks\\obj\\",
+        "outputPath": "C:\\Users\\epost\\cSharp\\Parks\\Parks\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
