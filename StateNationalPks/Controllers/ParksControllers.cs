@@ -10,7 +10,7 @@ using StateNationalPks.Models;
 
 namespace StateNationalPks.Controllers
 {
- // [Authorize]
+  [Authorize]
   [Produces("application/json")]
   [Route("api/[controller]")]
   [ApiController]
